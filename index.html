@@ -179,6 +179,26 @@ g.selected path {
 				
                 </div>
     </div>
+	
+	
+      <footer>
+          <div class="top">
+            <div class="viewport">
+              <div id="footer-products">
+              </div>
+              <div id="footer-about">
+              </div>
+              <div id="contact-about">
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="bottom">
+            <div class="viewport">
+              Powered by UNHCR Regional Bureau for Europe <img src="images/unhcr.png">
+            </div>
+          </div>
+      </footer>
 
 
 
@@ -353,7 +373,7 @@ g.selected path {
                     })
                     .projection(d3.geo.mercator().center([26,60]).scale(550)) /* Center on Jordan */
 					.title(function (d) {
-                        return "Geo-Filter: " + d.key;
+                        return "Country: " + d.key;
                     });
                     $('#reset').on('click', function (){
                       dc.filterAll();
