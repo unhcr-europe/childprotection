@@ -361,7 +361,7 @@ g.selected path {
                     })
                     .projection(d3.geo.mercator().center([26,60]).scale(550)) /* Center on Jordan */
 					.title(function (d) {
-                        return "Geo-Filter: " + d.key;
+                        return "Country: " + d.key;
                     });
                     $('#reset').on('click', function (){
                       dc.filterAll();
